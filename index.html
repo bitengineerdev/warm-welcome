@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<!-- Template by html.am -->
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>2 Column Frames Layout &mdash; Left Menu</title>
+    <style type="text/css">
+
+		body{
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			height: 100%;
+			max-height: 100%;
+			font-family:Sans-serif;
+			line-height: 1.5em;
+		}
+
+		#nav{
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			width: 250px; /* Width of navigation frame */
+			height: 100%;
+			overflow: hidden; /* Disables scrollbars on the navigation frame. To enable scrollbars, change "hidden" to "scroll" */
+			background: #eee;
+		}
+
+		main{
+			position: fixed;
+			top: 0;
+			left: 250px; /* Set this to the width of the navigation frame */
+			right: 0;
+			bottom: 0;
+			overflow: auto;
+			background: #fff;
+		}
+
+		.innertube{
+			margin: 15px; /* Provides padding for the content */
+		}
+
+		p {
+			color: #555;
+		}
+
+		nav ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+		}
+
+		nav ul a {
+			color: darkgreen;
+			text-decoration: none;
+		}
+
+		/*IE6 fix*/
+		* html body{
+			padding: 0 0 0 230px; /* Set the last value to the width of the navigation frame */
+		}
+
+		* html main{
+			height: 100%;
+			width: 100%;
+		}
+
+		</style>
+</head>
+
+<body>
+
+<main>
+    <div class="innertube">
+
+        <h1>bitengineer.dev</h1>
+        <p>I should probably move the links here to look nicer. Maybe remove the sidebar for something more streamline.</p>
+        <p>Definitely a WIP and long term learning experience.</p>
+
+        <h2>About</h2>
+        <p>I'll add some pieces about myself here...</p>
+        <p>I am a software engineer. That's a start!</p>
+        <p>Where and how should I deploy this?</p>
+        <p>Time to learn typescript!</p>
+
+    </div>
+</main>
+
+<nav id="nav">
+    <div class="innertube">
+
+        <h3>Links</h3>
+        <ul>
+            <li><a href="https://github.com/bitengineerdev">github.com/bitengineerdev</a></li>
+        </ul>
+    </div>
+</nav>
+
+</body>
+</html>
